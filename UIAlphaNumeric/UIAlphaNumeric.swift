@@ -518,7 +518,7 @@ public struct UIAlphaNumeric {
 //        }
         pos += 1
         if (pos >= charDict.count) {
-            return 0
+            return 10
         } else {
             return pos
         }
@@ -530,7 +530,7 @@ public struct UIAlphaNumeric {
 //            return 0
 //        }
         pos -= 1
-        if (pos < 0) {
+        if (pos < 10) {
             return charDict.count - 1
         } else {
             return pos
