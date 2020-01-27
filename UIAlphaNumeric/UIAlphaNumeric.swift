@@ -590,7 +590,7 @@ let layoutSprite = {(pixWidth:Int,pixHeight:Int,coloursArray:[Int],spriteView:UI
             constraintsArray.append(leftPixelConstraint(v,viewArray[w-1]))
         }
 
-        v.backgroundColor = colors[p]
+        v.backgroundColor = alphaColors[p]
         viewArray.append(v)
         spriteView.addSubview(v)
 
