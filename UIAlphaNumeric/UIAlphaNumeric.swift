@@ -10,6 +10,9 @@ import Foundation
 import UIKit
 import UISprites
 
+public let alphaColors:[UIColor] =
+[.clear,.red,.blue,.green,.yellow,.magenta,.cyan,.orange,.brown,.lightGray,.purple,.black,.lightGray,.gray,.darkGray,.white]
+
 let pixelArray:[[Int]] =
     [[0,1,1,1,1,1,1,0, //0
         1,1,2,2,2,2,1,1,
