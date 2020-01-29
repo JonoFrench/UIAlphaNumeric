@@ -7,22 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3403BC9023D753E700C29047 /* UISprites.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3403BC8E23D753B500C29047 /* UISprites.framework */; };
-		3481DC2F23D88F7A00FA7FF6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3481DC2E23D88F7A00FA7FF6 /* Foundation.framework */; };
-		3481DC3623D89BA300FA7FF6 /* UISprites.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3403BC8E23D753B500C29047 /* UISprites.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		348F9F9523D7230A0007FC65 /* UIAlphaNumeric.h in Headers */ = {isa = PBXBuildFile; fileRef = 348F9F9323D7230A0007FC65 /* UIAlphaNumeric.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		348F9F9C23D723250007FC65 /* UIAlphaNumeric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348F9F9B23D723250007FC65 /* UIAlphaNumeric.swift */; };
+		34FC7B8F23E09F8B007E0E3A /* UISprites.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34FC7B8E23E09F8B007E0E3A /* UISprites.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		3403BC8D23D753B500C29047 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3403BC8923D753B500C29047 /* UISprites.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 348F9F5823CE15440007FC65;
-			remoteInfo = UISprites;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		3403BC9223D753E700C29047 /* Embed Frameworks */ = {
@@ -35,25 +23,15 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		34BC998823D87AD20024A1BA /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 12;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				3481DC3623D89BA300FA7FF6 /* UISprites.framework in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		3403BC8923D753B500C29047 /* UISprites.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = UISprites.xcodeproj; path = ../UISprites/UISprites.xcodeproj; sourceTree = "<group>"; };
 		3481DC2E23D88F7A00FA7FF6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		348F9F9023D7230A0007FC65 /* UIAlphaNumeric.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIAlphaNumeric.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		348F9F9323D7230A0007FC65 /* UIAlphaNumeric.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIAlphaNumeric.h; sourceTree = "<group>"; };
 		348F9F9423D7230A0007FC65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		348F9F9B23D723250007FC65 /* UIAlphaNumeric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlphaNumeric.swift; sourceTree = "<group>"; };
+		34FC7B8E23E09F8B007E0E3A /* UISprites.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UISprites.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,25 +39,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3481DC2F23D88F7A00FA7FF6 /* Foundation.framework in Frameworks */,
-				3403BC9023D753E700C29047 /* UISprites.framework in Frameworks */,
+				34FC7B8F23E09F8B007E0E3A /* UISprites.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3403BC8A23D753B500C29047 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				3403BC8E23D753B500C29047 /* UISprites.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		3403BC8F23D753E700C29047 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				34FC7B8E23E09F8B007E0E3A /* UISprites.framework */,
 				3481DC2E23D88F7A00FA7FF6 /* Foundation.framework */,
 			);
 			name = Frameworks;
@@ -88,7 +58,6 @@
 		348F9F8623D723090007FC65 = {
 			isa = PBXGroup;
 			children = (
-				3403BC8923D753B500C29047 /* UISprites.xcodeproj */,
 				348F9F9223D7230A0007FC65 /* UIAlphaNumeric */,
 				348F9F9123D7230A0007FC65 /* Products */,
 				3403BC8F23D753E700C29047 /* Frameworks */,
@@ -132,7 +101,6 @@
 			buildConfigurationList = 348F9F9823D7230A0007FC65 /* Build configuration list for PBXNativeTarget "UIAlphaNumeric" */;
 			buildPhases = (
 				348F9F8B23D7230A0007FC65 /* Headers */,
-				34BC998823D87AD20024A1BA /* CopyFiles */,
 				348F9F8C23D7230A0007FC65 /* Sources */,
 				348F9F8D23D7230A0007FC65 /* Frameworks */,
 				348F9F8E23D7230A0007FC65 /* Resources */,
@@ -173,28 +141,12 @@
 			mainGroup = 348F9F8623D723090007FC65;
 			productRefGroup = 348F9F9123D7230A0007FC65 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 3403BC8A23D753B500C29047 /* Products */;
-					ProjectRef = 3403BC8923D753B500C29047 /* UISprites.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				348F9F8F23D7230A0007FC65 /* UIAlphaNumeric */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		3403BC8E23D753B500C29047 /* UISprites.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = UISprites.framework;
-			remoteRef = 3403BC8D23D753B500C29047 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		348F9F8E23D7230A0007FC65 /* Resources */ = {
@@ -269,7 +221,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../../Frameworks";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -326,7 +279,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../../Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
