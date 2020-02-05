@@ -8,8 +8,12 @@
 
 import Foundation
 import UIKit
-import UISprites
 
+#if TVOS
+import UISpritesTV
+#else
+import UISprites
+#endif
 public let alphaColors:[UIColor] =
 [.clear,.red,.blue,.green,.yellow,.magenta,.cyan,.orange,.brown,.lightGray,.purple,.black,.lightGray,.gray,.darkGray,.white]
 

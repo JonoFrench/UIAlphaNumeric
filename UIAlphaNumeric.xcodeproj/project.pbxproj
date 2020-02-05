@@ -7,8 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		344A8B1D23E9A2290012AFF9 /* UIAlphaNumeric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348F9F9B23D723250007FC65 /* UIAlphaNumeric.swift */; };
+		344A8B1E23E9A4150012AFF9 /* UIAlphaNumericTV.h in Sources */ = {isa = PBXBuildFile; fileRef = 34C882CA23E8B4C10018BB21 /* UIAlphaNumericTV.h */; };
 		348F9F9523D7230A0007FC65 /* UIAlphaNumeric.h in Headers */ = {isa = PBXBuildFile; fileRef = 348F9F9323D7230A0007FC65 /* UIAlphaNumeric.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		348F9F9C23D723250007FC65 /* UIAlphaNumeric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348F9F9B23D723250007FC65 /* UIAlphaNumeric.swift */; };
+		34C882CC23E8B4C10018BB21 /* UIAlphaNumericTV.h in Headers */ = {isa = PBXBuildFile; fileRef = 34C882CA23E8B4C10018BB21 /* UIAlphaNumericTV.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		34C882D123E8B4D40018BB21 /* UISpritesTV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34C882D023E8B4D40018BB21 /* UISpritesTV.framework */; };
+		34C882D223E8B4D40018BB21 /* UISpritesTV.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 34C882D023E8B4D40018BB21 /* UISpritesTV.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		34FC7B8F23E09F8B007E0E3A /* UISprites.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34FC7B8E23E09F8B007E0E3A /* UISprites.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +28,17 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		34C882D323E8B4D50018BB21 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				34C882D223E8B4D40018BB21 /* UISpritesTV.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +47,10 @@
 		348F9F9323D7230A0007FC65 /* UIAlphaNumeric.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIAlphaNumeric.h; sourceTree = "<group>"; };
 		348F9F9423D7230A0007FC65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		348F9F9B23D723250007FC65 /* UIAlphaNumeric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlphaNumeric.swift; sourceTree = "<group>"; };
+		34C882C823E8B4C10018BB21 /* UIAlphaNumericTV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIAlphaNumericTV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		34C882CA23E8B4C10018BB21 /* UIAlphaNumericTV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIAlphaNumericTV.h; sourceTree = "<group>"; };
+		34C882CB23E8B4C10018BB21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34C882D023E8B4D40018BB21 /* UISpritesTV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UISpritesTV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		34FC7B8E23E09F8B007E0E3A /* UISprites.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UISprites.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -43,12 +63,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		34C882C523E8B4C10018BB21 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34C882D123E8B4D40018BB21 /* UISpritesTV.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		3403BC8F23D753E700C29047 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				34C882D023E8B4D40018BB21 /* UISpritesTV.framework */,
 				34FC7B8E23E09F8B007E0E3A /* UISprites.framework */,
 				3481DC2E23D88F7A00FA7FF6 /* Foundation.framework */,
 			);
@@ -59,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				348F9F9223D7230A0007FC65 /* UIAlphaNumeric */,
+				34C882C923E8B4C10018BB21 /* UIAlphaNumericTV */,
 				348F9F9123D7230A0007FC65 /* Products */,
 				3403BC8F23D753E700C29047 /* Frameworks */,
 			);
@@ -68,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				348F9F9023D7230A0007FC65 /* UIAlphaNumeric.framework */,
+				34C882C823E8B4C10018BB21 /* UIAlphaNumericTV.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -82,6 +113,15 @@
 			path = UIAlphaNumeric;
 			sourceTree = "<group>";
 		};
+		34C882C923E8B4C10018BB21 /* UIAlphaNumericTV */ = {
+			isa = PBXGroup;
+			children = (
+				34C882CA23E8B4C10018BB21 /* UIAlphaNumericTV.h */,
+				34C882CB23E8B4C10018BB21 /* Info.plist */,
+			);
+			path = UIAlphaNumericTV;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -90,6 +130,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				348F9F9523D7230A0007FC65 /* UIAlphaNumeric.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34C882C323E8B4C10018BB21 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34C882CC23E8B4C10018BB21 /* UIAlphaNumericTV.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,6 +163,25 @@
 			productReference = 348F9F9023D7230A0007FC65 /* UIAlphaNumeric.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		34C882C723E8B4C10018BB21 /* UIAlphaNumericTV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34C882CF23E8B4C10018BB21 /* Build configuration list for PBXNativeTarget "UIAlphaNumericTV" */;
+			buildPhases = (
+				34C882C323E8B4C10018BB21 /* Headers */,
+				34C882C423E8B4C10018BB21 /* Sources */,
+				34C882C523E8B4C10018BB21 /* Frameworks */,
+				34C882C623E8B4C10018BB21 /* Resources */,
+				34C882D323E8B4D50018BB21 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UIAlphaNumericTV;
+			productName = UIAlphaNumericTV;
+			productReference = 34C882C823E8B4C10018BB21 /* UIAlphaNumericTV.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -127,6 +194,9 @@
 					348F9F8F23D7230A0007FC65 = {
 						CreatedOnToolsVersion = 11.3;
 						LastSwiftMigration = 1130;
+					};
+					34C882C723E8B4C10018BB21 = {
+						CreatedOnToolsVersion = 11.3.1;
 					};
 				};
 			};
@@ -144,12 +214,20 @@
 			projectRoot = "";
 			targets = (
 				348F9F8F23D7230A0007FC65 /* UIAlphaNumeric */,
+				34C882C723E8B4C10018BB21 /* UIAlphaNumericTV */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		348F9F8E23D7230A0007FC65 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34C882C623E8B4C10018BB21 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -164,6 +242,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				348F9F9C23D723250007FC65 /* UIAlphaNumeric.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34C882C423E8B4C10018BB21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				344A8B1E23E9A4150012AFF9 /* UIAlphaNumericTV.h in Sources */,
+				344A8B1D23E9A2290012AFF9 /* UIAlphaNumeric.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,6 +448,60 @@
 			};
 			name = Release;
 		};
+		34C882CD23E8B4C10018BB21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 9GZ8FVR7LN;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = UIAlphaNumericTV/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_SWIFT_FLAGS = "-DTVOS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jaypeeff.UIAlphaNumericTV;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 12.1;
+			};
+			name = Debug;
+		};
+		34C882CE23E8B4C10018BB21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 9GZ8FVR7LN;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = UIAlphaNumericTV/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_SWIFT_FLAGS = "-DTVOS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jaypeeff.UIAlphaNumericTV;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 12.1;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -378,6 +519,15 @@
 			buildConfigurations = (
 				348F9F9923D7230A0007FC65 /* Debug */,
 				348F9F9A23D7230A0007FC65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		34C882CF23E8B4C10018BB21 /* Build configuration list for PBXNativeTarget "UIAlphaNumericTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34C882CD23E8B4C10018BB21 /* Debug */,
+				34C882CE23E8B4C10018BB21 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
